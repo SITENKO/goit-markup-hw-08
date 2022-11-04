@@ -1,0 +1,102 @@
+.footer {
+    background-color: #2f303a;
+    padding: 60px 0;
+}
+
+.footer__group {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.stidio-footer {
+    color: var(--secondary-text-color);
+}
+
+.footer__contact {
+    margin-top: 20px;
+}
+
+.footer__street {
+    display: inline-block;
+    color: var(--secondary-text-color);
+    line-height: 1.71;
+}
+
+.footer__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer__link {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.71;
+    transition-property: color;
+    @include animation;
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.footer__title {
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    margin-bottom: 20px;
+}
+
+.footer__list {
+    display: flex;
+    gap: 10px;
+}
+
+.footer__soc {
+    color: var(--secondary-text-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    @include icon__group;
+    
+    transition-property: background-color;
+    @include animation;
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.footer__icon {
+    fill: currentColor;
+}
+
+.footer__follow {
+    display: flex;
+    gap: 12px;
+}
+
+.footer__mail {
+    color: var(--secondary-text-color);
+    width: 350px;
+    height: 50px;
+    padding-left: 16px;
+    background-color: transparent;
+    outline: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    transition-property: border;
+    @include animation;
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:focus-within {
+        border: 1px solid var(--accent-color);
+        color: var(--secondary-text-color);
+    }
+}
