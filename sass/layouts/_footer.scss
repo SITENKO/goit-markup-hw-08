@@ -12,34 +12,58 @@
 }
 
 .footer__group {
-    @media screen and (min-width: 480px) {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;      
-    }
-
     @media screen and (min-width: 768px) {
-        
+        display: flex;
+        align-items: baseline;
     }
+    
+    // @media screen and (min-width: 480px) {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     flex-direction: column;
+    //     align-items: center;      
+    // }
+
+    // @media screen and (min-width: 768px) {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     flex-direction: column;
+    //     align-items: center;      
+    // }
 }
 
 .footer_part {
-    @media screen and (min-width: 480px) {
-        margin-bottom: 60px;
-    }
+    width: 100%;
+    // margin-right: 150px;
+    display: flex;
+    flex-wrap: wrap;
+
+    // @media screen and (min-width: 480px) {
+    //     margin-bottom: 60px;
+    // }
     
-    @media screen and (min-width: 768px) {
-        
+}   
+
+@media screen and (min-width: 768px) {
+    .footer_part + .footer_part {
+        // margin-left: 165px;
     }
 }
 
 .footer__address {
-    @media screen and (min-width: 480px) {
-        display: flex;
-        flex-direction: column;
+    // @media screen and (min-width: 480px) {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    // }
+
+    @media screen and (min-width: 768px) {
+        // display: flex;
+        // flex-direction: column;
         align-items: center;
     }
+
+    
    
 }
 
@@ -81,7 +105,12 @@
     text-transform: uppercase;
     color: var(--secondary-text-color);
     margin-bottom: 20px;
-    @media screen and (min-width: 480px) {
+    // @media screen and (min-width: 480px) {
+    //     display: flex;
+    //     justify-content: center;
+    // }
+
+    @media screen and (min-width: 768px) {
         display: flex;
         justify-content: center;
     }
@@ -111,11 +140,11 @@
 }
 
 .footer__follow { 
-    @media screen and (min-width: 480px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    // @media screen and (min-width: 480px) {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    // }
     
 }
 
@@ -132,10 +161,10 @@
     transition-property: border;
     @include animation;
 
-    @media screen and (min-width: 480px) {
-        width: 450px;
-        margin-bottom: 20px;
-    }
+    // @media screen and (min-width: 480px) {
+    //     width: 450px;
+    //     margin-bottom: 20px;
+    // }
 
     &::placeholder {
         font-size: 16px;
