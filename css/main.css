@@ -47,7 +47,7 @@ body {
   display: inline-block;
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
-  min-width: 216px;
+  min-width: 200px;
   padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
@@ -449,25 +449,43 @@ header {
 }
 
 .hero {
+  width: 100%;
+  padding: 118px 60px;
   background-color: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herobg.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/herobg.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  padding: 200px 0;
+  background-size: cover;
+  flex-grow: 1;
   text-align: center;
   max-width: 1600px;
   margin: 0 auto;
 }
 
 .hero-titel {
-  margin: 0 auto 30px;
   color: var(--secondary-text-color);
-  width: 696px;
+  margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 480px) {
+  .hero-titel {
+    font-size: 26px;
+    line-height: 1.36;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-titel {
+    font-size: 26px;
+    line-height: 1.36;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-titel {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .benefits {
