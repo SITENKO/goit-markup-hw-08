@@ -414,6 +414,11 @@ header {
   justify-content: space-between;
 }
 
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   color: var(--accent-color);
   font-family: "Raleway";
@@ -423,11 +428,6 @@ header {
 
 .studio-header {
   color: var(--titles-text-color);
-}
-
-.header__nav {
-  display: flex;
-  align-items: center;
 }
 
 .header__list {
