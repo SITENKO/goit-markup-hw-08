@@ -4,6 +4,14 @@
     line-height: 1.15;
     text-align: center;
     color: var(--titles-text-color);
+
+    @media screen and (min-width: 480px) {
+        line-height: 1.5;
+    }
+
+    @media screen and (min-width: 768px) {
+        line-height: 1.5;
+    }
 }
 
 .form-items {
@@ -20,6 +28,8 @@
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
+
+    
 }
 
 .input-wrap {
@@ -86,6 +96,16 @@
     align-items: center;
     line-height: 1.71;
     color: var(--ptimary-text-color);
+
+    @media screen and (min-width: 480px){
+        font-size: 12px;
+        line-height: 1.16;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 12px;
+        line-height: 1.16;
+    }
 }
 
 .mark {
@@ -119,6 +139,16 @@
     text-underline-offset: 3px;
 
     color: var(--accent-color);
+
+    @media screen and (min-width: 480px) {
+        font-size: 12px;
+        line-height: 1.16;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 12px;
+        line-height: 1.16;
+    }
 }
 
 .send-btn {

@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
-    <!-- <header>
+    <header>
       <div class="header__container container">
         <nav class="header__nav">
           <a href="./index.html" class="logo link"
@@ -55,12 +55,40 @@
             >
           </li>
         </ul>
+        <button  type="button" class="menu-open-btn" data-menu-open>
+          <svg class="menu-open" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-open"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden" data-menu>
+        <button type="button" class="menu-close-btn" data-menu-close>
+          <svg class="menu-close" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="menu__site list">
+          <li class="menu__item"><a href="" class="site__page link">Студія</a></li>
+          <li class="menu__item"><a href="" class="site__page link">Портфоліо</a></li>
+          <li class="menu__item"><a href="" class="site__page link">Контакти</a></li>
+        </ul>
+        <div class="mob__menu-bottom"></div>
+        <ul class="menu__contact list">
+          <li class="menu__item"><a href="mailto:info@devstudio.com" class="contact-link link">info@devstudio.com</a></li>
+          <li class="menu__item"><a href="tel:+380961111111" class="contact-link link">+38 096 111 11 11</a></li>
+        </ul>
+        <ul class="menu__soc list">
+          <li class="menu__soc-item"><a href="" class="soc-link link">Instagram</a></li>
+          <li class="menu__soc-item"><a href="" class="soc-link link">Twitter</a></li>
+          <li class="menu__soc-item"><a href="" class="soc-link link">Facebook</a></li>
+          <li class="menu__soc-item"><a href="" class="soc-link link">LinkedIn</a></li>
+        </ul>
+      </div>
+    </header>
     <main>
       <!-- Hero -->
       <section class="section hero">
-        <div class="container">
+        <div class="hero__contant container">
           <h1 class="hero-titel">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero-button" data-modal-open type="button">
             Замовити послугу
@@ -158,8 +186,8 @@
               </div>
             </li>
           </ul>
-        </div>
-      </section> -->
+        </div> -->
+      </section>
       <!-- Our team -->
       <section class="section team">
         <div class="container">
@@ -413,80 +441,67 @@
       </section>
     </main>
     <!-- Footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer__group container">
-        <div class="footer_part">
-          <a href="./index.html" class="footer__logo logo link"
-            >Web<span class="stidio-footer">Studio</span></a
-          >
-          <address class="footer__contact">
-            <ul class="footer__address list">
-              <li class="footer__item">
-                <a
-                  href="https://goo.gl/maps/DnnFJ55b5yEKfzNg6"
-                  target="blank"
-                  rel="noreferrer noopener"
-                  class="footer__street link"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+        <div class="footer__tab">
+          <div class="footer__part">
+            <a href="./index.html" class="footer__logo footer__logo--bottom logo link">
+              Web<span class="stidio-footer">Studio</span>
+            </a>
+            <address>
+              <ul class="footer__list list">
+                <li class="footer__item">
+                  <a href="https://goo.gl/maps/DnnFJ55b5yEKfzNg6" target="blank" rel="noreferrer noopener"
+                    class="footer__street link">м. Київ, пр-т Лесі Українки, 26</a>
+                </li>
+                <li class="footer__item">
+                  <a href="mailto:info@devstudio.com" class="footer__link link">info@devstudio.com</a>
+                </li>
+                <li class="footer__item">
+                  <a href="tel:+380961111111" class="footer__link link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__part">
+            <h2 class="footer__title">приєднуйтесь</h2>
+            <ul class="footer__network list">
+              <li>
+                <a href="" class="footer__soc">
+                  <svg width="20" height="20" class="footer__icon">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a href="mailto:info@devstudio.com" class="footer__link link"
-                  >info@devstudio.com</a
-                >
+              <li>
+                <a href="" class="footer__soc">
+                  <svg width="20" height="20" class="footer__icon">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a href="tel:+380961111111" class="footer__link link"
-                  >+38 096 111 11 11</a
-                >
+              <li>
+                <a href="" class="footer__soc">
+                  <svg width="20" height="20" class="footer__icon">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="footer__soc">
+                  <svg width="20" height="20" class="footer__icon">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="footer_part">
-          <h2 class="footer__title">Приєднуйтеся</h2>
-          <ul class="footer__list list">
-            <li>
-              <a href="" class="footer__soc">
-                <svg width="20" height="20" class="footer__icon">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="footer__soc">
-                <svg width="20" height="20" class="footer__icon">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="footer__soc">
-                <svg width="20" height="20" class="footer__icon">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="footer__soc">
-                <svg width="20" height="20" class="footer__icon">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer_part">
+        <div class="footer__part">
           <h2 class="footer__title">Підпишіться на розсилку</h2>
-          <form class="footer__follow">
+          <form class="footer__followd">
             <label for="follow-mail">
-              <input
-                class="footer__mail"
-                type="email"
-                name="follow-mail"
-                id="follow-mail"
-                placeholder="E-mail"
-              />
+              <input class="footer__mail" type="email" name="follow-mail" id="follow-mail" placeholder="E-mail" />
             </label>
             <button type="submit" class="form-btn">
               Підписатися
@@ -497,9 +512,9 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- modal btn -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-icon-close" width="11" height="11">
@@ -583,7 +598,8 @@
           <button class="form-btn send-btn" type="submit">Відправити</button>
         </form>
       </div>
-    </div> -->
-    <!-- <script src="./modal/modal.js"></script> -->
+    </div>
+    <script src="./modal/modal.js"></script>
+    <script src="./modal/menu.js"></script>
   </body>
 </html>

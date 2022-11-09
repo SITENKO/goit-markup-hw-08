@@ -1,6 +1,11 @@
-.job {
-    padding-top: 0;
+@media screen and (min-width: 1199px) {
+    .job {
+        display: none;
+    }
 }
+// .job {
+//     padding-top: 0;
+// }
 
 .galery {
     display: flex;
