@@ -89,19 +89,12 @@ header {
     fill: currentColor;
 }
 
-.menu-open{
-    // margin-left: auto;
-}
-
 .menu-close{
     margin-left: auto;
     
 }
 
 .mob-menu {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
     position: fixed;
     top: 0;
     background-color: #fff;
@@ -122,11 +115,6 @@ header {
     right: 15px;
 }
 
-.menu-close {}
-
-.menu__site{
-}
-
 .site__page {
     font-weight: 500;
     font-size: 40px;
@@ -140,10 +128,6 @@ header {
 .menu__site:not(:last-child){
     margin-bottom: 32px;
 }
-
-.list {}
-
-.link {}
 
 .menu__contact {
     margin-bottom: 64px;
@@ -196,8 +180,4 @@ header {
     background-color: transparent;
     border: none;
     cursor: pointer;
-}
-
-@media screen and (max-width: 767px) {
-    
 }
