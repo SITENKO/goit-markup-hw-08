@@ -1,0 +1,18 @@
+.soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+    &__link{
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__icon {
+        fill: currentColor;
+    }
+}
+

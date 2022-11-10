@@ -1,0 +1,104 @@
+.footer {
+    background-color: #2F303A;
+    & .logo__part {
+        color: var(--primary-white-color);
+    }
+
+    @include desktop {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    text-align: center;
+
+    @include tablet {
+        justify-content: space-evenly;
+    }
+
+    @include desktop {
+        align-items: baseline;
+        text-align: left;
+    }
+}
+
+.address {
+    margin-top: 20px;
+    font-style: normal;
+}
+
+.address__link, .address__contact {
+    line-height: 1.71;
+    color: var(--primary-white-color);
+}
+
+.address__contact {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--transition-duration) var(--transition-timing-function); 
+    &:hover, :focus {
+        color: var(--accent-color);
+    }
+}
+
+.footer__text {
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
+
+.footer__soc-link{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--primary-white-color);  
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
+    &:hover, :focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.folowe-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.folowe-form__mail {
+    height: 50px;
+    width: 100%;
+    padding: 15px 16px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: #2F303A;
+    outline-color: transparent;
+    color: var(--primary-white-color);
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    @include desktop {
+        width: 385px;
+        margin-right: 12px;
+        margin-bottom: auto;
+    }
+}
+
+.folowe-form__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+}
+
+.folowe-form__icon {
+    margin-left: 10px;
+    fill: var(--primary-white-color);
+}

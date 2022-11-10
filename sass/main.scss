@@ -1,8 +1,24 @@
-@import "./base/index";
+@import './utils/fonts';
+@import './utils/variables';
+@import './utils/hidden';
+@import './utils/mixin';
+@import './base/reset';
+@import './base/common';
 
-@import "./utils/index";
+@import './components/container';
+@import './components/logo';
+@import './components/section';
+@import './components/btn';
+@import './components/soc-list';
 
-@import "./components/index";
+@import './layout/page-header';
+@import './layout/footer';
 
-@import "./layouts/index";
+@import './layout/hero';
+@import './layout/feature';
+@import './layout/about';
+@import './layout/team';
+@import './layout/client';
+@import './layout/modal';
 
+@import './layout/portfolio';

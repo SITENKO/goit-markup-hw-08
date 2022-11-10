@@ -1,0 +1,47 @@
+.benefits__list {
+    margin-bottom: -30px;
+
+    @include tablet{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.benefits__item {
+    margin-bottom: 30px;
+
+    @include tablet {
+        @include calc(2, 2);
+    }
+
+    @include desktop {
+        @include calc(6, 4);
+    }
+}
+
+.benefits__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+}
+
+.benefits__title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--tittle-text-color);
+
+    @include tablet {
+        text-align: left;
+    }
+}
+
+.benefits__text {
+    line-height: 1.71;
+}
