@@ -18,6 +18,7 @@
     max-width: 450px;
     height: 609px;
     padding: 40px;
+    border-radius: 4px;
     background-color: rgba(255, 255, 255, 1);
     transition: transform var(--transition-duration) var(--transition-timing-function);
     .backdrop.is-hidden & {
@@ -138,6 +139,7 @@
 
 .policy__link {
     color: var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
 }
 
 .policy__icon {
