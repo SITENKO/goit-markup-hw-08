@@ -1,4 +1,4 @@
-.benefits__list {
+.feature__list {
     margin-bottom: -30px;
 
     @include tablet{
@@ -8,7 +8,7 @@
     }
 }
 
-.benefits__item {
+.feature__item {
     margin-bottom: 30px;
 
     @include tablet {
@@ -20,7 +20,7 @@
     }
 }
 
-.benefits__icon {
+.feature__icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +29,7 @@
     background-color: #F5F4FA;
 }
 
-.benefits__title {
+.feature__title {
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.14;
@@ -42,6 +42,6 @@
     }
 }
 
-.benefits__text {
+.feature__text {
     line-height: 1.71;
 }

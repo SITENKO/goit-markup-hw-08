@@ -62,12 +62,12 @@
     }
 }
 
-.folowe-form {
+.sign-form {
     display: flex;
     flex-wrap: wrap;
 }
 
-.folowe-form__mail {
+.sign-form__mail {
     height: 50px;
     width: 100%;
     padding: 15px 16px;
@@ -90,7 +90,7 @@
     }
 }
 
-.folowe-form__btn {
+.sign-form__btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,7 +98,7 @@
     height: 50px;
 }
 
-.folowe-form__icon {
+.sign-form__icon {
     margin-left: 10px;
     fill: var(--primary-white-color);
 }

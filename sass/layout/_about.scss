@@ -1,4 +1,4 @@
-.job {
+.about {
     display: none;
     @include desktop {
         display: block;
@@ -6,20 +6,20 @@
     }
 }
 
-.job__list {
+.abot__list {
     @include desktop {
         display: flex;
         justify-content: space-between;
     }   
 }
 
-.job__item {
+.about__item {
     @include desktop {
         position: relative;
     }    
 }
 
-.job__label {
+.about__label {
     @include desktop {
         position: absolute;
         bottom: 0;
