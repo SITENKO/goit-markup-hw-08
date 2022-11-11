@@ -590,8 +590,6 @@ body {
 }
 
 .hero {
-  max-width: 480px;
-  height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-right: auto;
@@ -602,6 +600,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  flex-grow: 1;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -610,7 +609,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     background-image: var(--bg-gradient), url(../img/bg-hero-tab.jpg);
   }
 }
@@ -621,8 +619,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1600px;
-    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: var(--bg-gradient), url(../img/bg-hero.jpg);
