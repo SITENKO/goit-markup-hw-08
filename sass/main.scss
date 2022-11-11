@@ -1,52 +1,24 @@
-// @import './utils/fonts';
-// @import './utils/variables';
-// @import './utils/hidden';
-// @import './utils/mixin';
-// @import './base/reset';
-// @import './base/common';
-
-// @import './components/container';
-// @import './components/logo';
-// @import './components/section';
-// @import './components/btn';
-// @import './components/soc-list';
-
-// @import './layout/page-header';
-// @import './layout/footer';
-
-// @import './layout/hero';
-// @import './layout/feature';
-// @import './layout/about';
-// @import './layout/team';
-// @import './layout/client';
-// @import './layout/modal';
-
-// @import './layout/portfolio';
-
-@import './base/common';
-@import './base/reset';
-
-@import './components/btn';
-@import './components/container';
-@import './components/form';
-@import './components/logo';
-@import './components/modal';
-@import './components/section-title';
-@import './components/section';
-@import './components/soc-list';
-@import './components/utilitarian-classes';
-
-@import './layout/about';
-@import './layout/client';
-@import './layout/feature';
-@import './layout/hero';
-@import './layout/modal';
-@import './layout/page-header';
-@import './layout/portfolio';
-@import './layout/team';
-
 @import './utils/fonts';
+@import './utils/variables';
 @import './utils/hidden';
 @import './utils/mixin';
-@import './utils/variables';
-@import './utils/visually-hidden';
+@import './base/reset';
+@import './base/common';
+
+@import './components/container';
+@import './components/logo';
+@import './components/section';
+@import './components/btn';
+@import './components/soc-list';
+
+@import './layout/page-header';
+@import './layout/footer';
+
+@import './layout/hero';
+@import './layout/feature';
+@import './layout/about';
+@import './layout/team';
+@import './layout/client';
+@import './layout/modal';
+
+@import './layout/portfolio';
