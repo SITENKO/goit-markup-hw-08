@@ -4,31 +4,31 @@
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    // background-color: #2F303A;
+    background-color: #2F303A;
     background-image: url(../../img/bg-hero-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
-    @include retina {
-        background-image: url(../../img/bg-hero-mob-2x.jpg);
-    }
+    // @include retina {
+    //     background-image: url(../../img/bg-hero-mob-2x.jpg);
+    // }
     
-    @include tablet {
-        background-image: url(../../img/bg-hero-tab.jpg);
-        @include retina {
-            background-image: url(../../img/bg-hero-tab-2x.jpg);
-        }
-    }
+    // @include tablet {
+    //     background-image: url(../../img/bg-hero-tab.jpg);
+    //     @include retina {
+    //         background-image: url(../../img/bg-hero-tab-2x.jpg);
+    //     }
+    // }
 
-    @include desktop {
-        height: 600px;
-        padding-top: 200px;
-        padding-bottom: 200px;
-        background-image: url(../../img/bg-hero.jpg);
-        @include retina {
-            background-image: url(../../img/bg-hero-2x.jpg);
-        }
-    }
+    // @include desktop {
+    //     height: 600px;
+    //     padding-top: 200px;
+    //     padding-bottom: 200px;
+    //     background-image: url(../../img/bg-hero.jpg);
+    //     @include retina {
+    //         background-image: url(../../img/bg-hero-2x.jpg);
+    //     }
+    // }
 }
 
 .hero__title {
