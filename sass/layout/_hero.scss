@@ -5,22 +5,18 @@
     margin-left: auto;
     text-align: center;
     background-color: #2F303A;
-    background-image: url(../../images/bg-mob.jpg);
-    // background-image: var(--bg-gradient), url(../images/bg-mob.jpg);
+    background-image: var(--bg-gradient), url(../images/bg-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
     @include retina {
-        background-image: url(../../images/bg-mob-2x.jpg);
-        // background-image: var(--bg-gradient), url(../images/bg-mob-2x.jpg);
+        background-image: var(--bg-gradient), url(../images/bg-mob-2x.jpg);
     }
     
     @include tablet {
-        background-image: url(../../images/bg-tab.jpg);
-        // background-image: var(--bg-gradient), url(../images/bg-tab.jpg);
+        background-image: var(--bg-gradient), url(../images/bg-tab.jpg);
         @include retina {
-            background-image: url(../../images/bg-tab-2x.jpg);
-            // background-image: var(--bg-gradient), url(../images/bg-tab-2x.jpg);
+            background-image: var(--bg-gradient), url(../images/bg-tab-2x.jpg);
         }
     }
 
@@ -28,11 +24,9 @@
         height: 600px;
         padding-top: 200px;
         padding-bottom: 200px;
-        background-image: url(../../images/bg.jpg);
-        // background-image: var(--bg-gradient), url(.//images/bg.jpg);
+        background-image: var(--bg-gradient), url(.//images/bg.jpg);
         @include retina {
-            background-image: url(../../images/bg-2x.jpg);
-            // background-image: var(--bg-gradient), url(../images/bg-2x.jpg);
+            background-image: var(--bg-gradient), url(../images/bg-2x.jpg);
         }
     }
 }
