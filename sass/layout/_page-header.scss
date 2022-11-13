@@ -1,8 +1,17 @@
 .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 21px;
+    padding-bottom: 21px;
     border-bottom: 1px solid #ECECEC;
+    @include tablet {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    @include desktop {
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
 }
+
 
 .header__container {
     display: flex;
@@ -44,7 +53,8 @@
     }
 }
 
-.site-nav__link, .contacts__link {
+.site-nav__link, 
+.contacts__link {
     @include tablet {
         font-weight: 500;
         line-height: 1.14;
@@ -53,7 +63,7 @@
         transition: color var(--transition-duration) var(--transition-timing-function);
     
         &:hover,
-        :focus {
+        &:focus {
             color: var(--accent-color);
         }
     }
@@ -62,7 +72,8 @@
 .site-nav__link {
     @include tablet {
         position: relative;
-        padding-bottom: 33px;
+        padding-top: 28px;
+        padding-bottom: 28px;
     
         &::after {
             content: '';
@@ -138,14 +149,13 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    padding-top: 48px;
-    padding-left: 20px;
-    padding-bottom: 48px;
+    padding: 48px 20px;
     background-color: var(--primary-white-color);
     z-index: 1;
 
     @include mobile {
         padding-left: 40px;
+        padding-right: 20px;
     }
 
     @include tablet {
@@ -199,7 +209,7 @@
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    color: var(--tittle-text-color);
+    color: var(--primary-text-color);
 }
 
 .mob-soc {

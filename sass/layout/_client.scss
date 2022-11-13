@@ -30,7 +30,7 @@
     transition: 
         color var(--transition-duration) var(--transition-timing-function), 
         border var(--transition-duration) var(--transition-timing-function);
-    &:hover, :focus {
+    &:hover, &:focus {
         color: var(--accent-color);
         border: 1px solid var(--accent-color);
     }
